@@ -1,0 +1,27 @@
+﻿@using GestionDeMetas.Shared.DTO.Meta
+@inject IMeta meta
+@inject DialogService DialogService
+ 
+
+<MetaFormulario metaDTO="Meta" enviarFormulario="Crear">
+
+</MetaFormulario>
+
+@code {
+    public MetaDTO Meta { get; set; } = new MetaDTO();
+    [Parameter] public EventCallback actualizarListado { set; get; }
+    public async Task Crear()
+    { 
+        var resultado=await meta.Crear(Meta);
+
+        if(resultado){
+          
+            DialogService.Close();
+            await actualizarListado.InvokeAsync();
+        }
+
+    }
+
+
+}
+

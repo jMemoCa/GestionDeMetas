@@ -1,0 +1,13 @@
+﻿.tarjetaMeta {
+     padding:1%;
+     margin-bottom:1%;
+
+}
+
+.seleccionada {
+    background: rgba(76, 175, 80, 0.16)!important;
+}
+
+.tarjetaMeta:hover {
+    background: #bdbdbd!important;
+}

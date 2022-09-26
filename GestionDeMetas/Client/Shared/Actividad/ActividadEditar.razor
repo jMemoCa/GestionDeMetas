@@ -1,0 +1,35 @@
+﻿@using GestionDeMetas.Shared.DTO.Actividad
+@inject DialogService DialogService
+@inject IActividad IActividad
+ 
+@if (actividadDTO != null)
+{
+<ActividadFormulario actividadDTO="actividadDTO" enviarFormulario="Editar">
+
+</ActividadFormulario>
+}
+@code {
+
+    [Parameter] public string id { get; set; }
+    public ActividadDTO actividadDTO { get; set; } = new ActividadDTO();
+    [Parameter] public EventCallback actualizarListado { get; set; }
+    protected override async Task OnInitializedAsync()
+    {
+        actividadDTO = await IActividad.ObtenerActividad(id);
+
+    }
+    public async Task Editar()
+    {
+        var resultado = await IActividad.Editar(actividadDTO);
+
+        if (resultado)
+        {
+            DialogService.Close();
+        }
+    }
+
+ 
+
+   
+
+}

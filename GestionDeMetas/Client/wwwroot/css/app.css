@@ -1,5 +1,17 @@
 ﻿@import url('open-iconic/font/css/open-iconic-bootstrap.min.css');
 
+ 
+
+.rz-dialog-titlebar {
+    background-color: #2e4a2f;
+   
+}
+.rz-dialog-title {
+    color: #fff;
+    font-weight:bold;
+    font-size:1.2rem;
+}
+
 html, body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
@@ -62,3 +74,5 @@ a, .btn-link {
     .blazor-error-boundary::after {
         content: "An error has occurred."
     }
+
+

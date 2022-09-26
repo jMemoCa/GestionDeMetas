@@ -1,0 +1,30 @@
+﻿@using GestionDeMetas.Shared.DTO.Actividad
+@inject DialogService DialogService
+@inject IActividad IActividad
+ 
+
+<ActividadFormulario enviarFormulario="Crear" actividadDTO="actividadDTO"></ActividadFormulario>
+
+
+@code {
+
+    [Parameter, EditorRequired] public string idMeta { get; set; }
+    [Parameter] public EventCallback actualizarListado{get;set;}
+
+    public ActividadDTO actividadDTO { get; set; } = new ActividadDTO();
+
+    public async Task Crear()
+    {
+        actividadDTO.MetaId = idMeta;
+        var resultado = await IActividad.Crear(actividadDTO);
+
+        if (resultado)
+        {
+            DialogService.Close();
+            await actualizarListado.InvokeAsync();
+        }
+
+    }
+
+
+}

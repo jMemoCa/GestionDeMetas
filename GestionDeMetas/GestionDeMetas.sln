@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GestionDeMetas.Client", "Cl
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GestionDeMetas.Shared", "Shared\GestionDeMetas.Shared.csproj", "{C5B7F203-9634-405F-8B41-EC6514D06D42}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestionDeMetas.Bussiness", "Bussiness\GestionDeMetas.Bussiness.csproj", "{75802F0D-78F7-40BB-947B-B66EB5239577}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GestionDeMetas.Bussiness", "Bussiness\GestionDeMetas.Bussiness.csproj", "{75802F0D-78F7-40BB-947B-B66EB5239577}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,9 +1,48 @@
 ﻿@page "/"
+<div class="row">
+    <div class="col-4" @key=idComponenteMetas style="border: #347736 solid 1px;
+    height: 90vh;
+    overflow-y: auto;" >
+        <GestionDeMetas.Client.Shared.Meta.MetaListado mostrarActividadesMeta="MostrarActividadesMeta" idMetaSeleccionada=@idMetaSeleccionada metaEliminada=MetaEliminada></GestionDeMetas.Client.Shared.Meta.MetaListado>
+    </div>
 
-<PageTitle>Index</PageTitle>
+    <div class="col-8" @key=idMetaSeleccionada>
 
-<h1>Hello, world!</h1>
+        @if (metaSeleccionada)
+        {
+            <GestionDeMetas.Client.Shared.Actividad.ActividadListar idMeta="@idMetaSeleccionada" actualizarListadoMetas="actualizarListadoMetas" ></GestionDeMetas.Client.Shared.Actividad.ActividadListar>
 
-Welcome to your new app.
 
-<SurveyPrompt Title="How is Blazor working for you?" />
+        }
+    </div>
+</div>
+@code {
+    public string idMetaSeleccionada { get; set; }
+    public bool metaSeleccionada { get; set; }
+    public string idComponenteTareas { set; get; }
+    public string idComponenteMetas { set; get; }
+
+    public void MostrarActividadesMeta(string id)
+    {
+        
+        idMetaSeleccionada = id;
+        metaSeleccionada = true;
+    }
+
+    public  void actualizarListadoMetas(){
+         
+        idComponenteMetas = Guid.NewGuid().ToString();
+        StateHasChanged();
+
+        
+    }
+
+    public void MetaEliminada(string id){
+
+        @if (idMetaSeleccionada == id)
+        {
+            metaSeleccionada = false;
+ StateHasChanged();
+        }
+    }
+}

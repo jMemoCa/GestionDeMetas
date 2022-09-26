@@ -1,0 +1,38 @@
+﻿@inject DialogService DialogService
+@using GestionDeMetas.Shared.DTO.Meta
+@inject IMeta meta
+  
+@if (MetaDTO != null)
+{
+<MetaFormulario metaDTO="MetaDTO" enviarFormulario="Editar">
+
+</MetaFormulario>
+}
+@code {
+
+    [Parameter] public string id { get; set; }
+    public MetaDTO MetaDTO { get; set; } = new MetaDTO();
+
+    [Parameter] public EventCallback actualizarListado { set; get; }
+    protected override async Task OnInitializedAsync()
+    {
+        MetaDTO = await meta.ObtenerMeta(id);
+
+    }
+    public async Task Editar()
+    {
+        var resultado=await meta.Editar(MetaDTO);
+
+        if (resultado)
+        {
+            DialogService.Close();
+            await actualizarListado.InvokeAsync();
+        }
+    }
+
+ 
+
+   
+
+}
+
