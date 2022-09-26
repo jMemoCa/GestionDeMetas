@@ -1,0 +1,12 @@
+D:\PROYECTOS\Git\GestionDeMetas\Shared\bin\Debug\net6.0\GestionDeMetas.Shared.deps.json
+D:\PROYECTOS\Git\GestionDeMetas\Shared\bin\Debug\net6.0\GestionDeMetas.Shared.dll
+D:\PROYECTOS\Git\GestionDeMetas\Shared\bin\Debug\net6.0\GestionDeMetas.Shared.pdb
+D:\PROYECTOS\Git\GestionDeMetas\Shared\obj\Debug\net6.0\GestionDeMetas.Shared.csproj.AssemblyReference.cache
+D:\PROYECTOS\Git\GestionDeMetas\Shared\obj\Debug\net6.0\GestionDeMetas.Shared.GeneratedMSBuildEditorConfig.editorconfig
+D:\PROYECTOS\Git\GestionDeMetas\Shared\obj\Debug\net6.0\GestionDeMetas.Shared.AssemblyInfoInputs.cache
+D:\PROYECTOS\Git\GestionDeMetas\Shared\obj\Debug\net6.0\GestionDeMetas.Shared.AssemblyInfo.cs
+D:\PROYECTOS\Git\GestionDeMetas\Shared\obj\Debug\net6.0\GestionDeMetas.Shared.csproj.CoreCompileInputs.cache
+D:\PROYECTOS\Git\GestionDeMetas\Shared\obj\Debug\net6.0\GestionDeMetas.Shared.dll
+D:\PROYECTOS\Git\GestionDeMetas\Shared\obj\Debug\net6.0\refint\GestionDeMetas.Shared.dll
+D:\PROYECTOS\Git\GestionDeMetas\Shared\obj\Debug\net6.0\GestionDeMetas.Shared.pdb
+D:\PROYECTOS\Git\GestionDeMetas\Shared\obj\Debug\net6.0\ref\GestionDeMetas.Shared.dll

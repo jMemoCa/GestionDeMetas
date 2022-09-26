@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "gZz1f1XV5IBcpmFDs29oaj16JM/QUS4YHhT3p9ZjT3oFNFxMLKHVFVTZDgOcTNYkazl+NIOnglZ4NZAtV0EAzA==",
+  "success": true,
+  "projectFilePath": "D:\\PROYECTOS\\Git\\GestionDeMetas\\Shared\\GestionDeMetas.Shared.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\juan_camarillo.SEG\\.nuget\\packages\\fluentvalidation\\10.3.6\\fluentvalidation.10.3.6.nupkg.sha512"
+  ],
+  "logs": []
+}

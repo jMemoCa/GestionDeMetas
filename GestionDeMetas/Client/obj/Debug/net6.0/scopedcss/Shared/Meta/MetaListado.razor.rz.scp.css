@@ -1,0 +1,13 @@
+.tarjetaMeta[b-4di1urxbli] {
+     padding:1%;
+     margin-bottom:1%;
+
+}
+
+.seleccionada[b-4di1urxbli] {
+    background: rgba(76, 175, 80, 0.16)!important;
+}
+
+.tarjetaMeta:hover[b-4di1urxbli] {
+    background: #bdbdbd!important;
+}
